@@ -1,17 +1,17 @@
-@import './styles/base/_variables.css';
-@import './styles/base/_reset.css';
-@import './styles/base/_typography.css';
-@import './styles/base/_global.css';
+@import '/styles/base/_variables.css';
+@import '/styles/base/_reset.css';
+@import '/styles/base/_typography.css';
+@import '/styles/base/_global.css';
 
-@import './styles/components/_profile-card.css';
-@import './styles/components/_bank.css';
-@import './styles/components/_form.css';
-@import './styles/components/_list.css';
-@import './styles/components/_stats.css';
+@import '/styles/components/_profile-card.css';
+@import '/styles/components/_bank.css';
+@import '/styles/components/_form.css';
+@import '/styles/components/_list.css';
+@import '/styles/components/_stats.css';
 
-@import './styles/layout/_sections.css';
+@import '/styles/layout/_sections.css';
 
 
-@import './styles/utils/_helpers.css';
+@import '/styles/utils/_helpers.css';
 
-@import './styles/components/toggleBtn.css';
+@import '/styles/components/toggleBtn.css';
