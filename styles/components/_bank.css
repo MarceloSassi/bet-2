@@ -1,0 +1,65 @@
+.bank {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  
+  
+  
+  height: auto;
+  
+  }
+  
+  .bank__title {
+    font-size: 1.25rem;
+   
+  }
+  
+  .bank__text {
+    font-size: 1rem;
+  }
+  
+  .bank__value {
+    font-weight: bold;
+    color: var(--color-secondary);
+  }
+
+  .bank__info{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    background-color: var(--white);
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  /* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .bank {
+    flex-direction: column; 
+    gap: 5px;
+    box-shadow: 0 0 8px 0 rgba(197, 198, 197, 0.54),
+    0 6px 20px 0 rgba(106, 106, 106, 0.19);
+    padding: 5px; 
+    background-color: var(--card-bg-color);
+    border-radius: 8px;
+    order: 3;
+  }
+
+  .bank__title {
+    font-size: 1rem;
+  }
+
+  .bank__text {
+    font-size: 0.9rem; 
+  }
+
+  .bank__value {
+    font-size: 1.1rem; 
+  }
+
+  .bank__info {
+   
+    gap: 0.5rem; 
+    padding: 10px; 
+  }
+}

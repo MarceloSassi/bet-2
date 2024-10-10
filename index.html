@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestão de Banca</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+  <body class="theme--light">
+    <main class="main-content">
+      <section class="section section--profile">
+        <!--PROFILE-->
+        <div class="profile-card">
+          <img
+            src="/assets/img/WhatsApp Image 2024-10-04 at 16.52.22.jpeg"
+            class="profile-card__image"
+            alt="Foto do usuário Marcelo Sassi"
+          />
+          <h3 class="profile-card__name">Marcelo Sassi</h3>
+        </div>
+        <!--BANCO-->
+        <div class="bank">
+          <h4 class="bank__title">Banco</h4>
+          <div class="bank__info">
+            <p class="bank__item">
+              Total Apostado: R$
+              <span class="bank__value" id="total-apostado">0.00</span>
+            </p>
+            <p class="bank__item">
+              Total Ganho: R$
+              <span class="bank__value" id="total-ganho">0.00</span>
+            </p>
+            <p class="bank__item">
+              Lucro Real: R$
+              <span class="bank__value" id="lucro-total">0.00</span>
+            </p>
+          </div>
+        </div>
+        <!--BOTÃO TEMA-->
+        <div class="theme-switcher">
+          <label class="theme-switcher__label">
+            <input type="checkbox" class="theme-switcher__input" id="theme-toggle" />
+            <span class="theme-switcher__slider"></span>
+          </label>
+        </div>
+      </section>
+
+      <!--BETS SECTION-->
+      <section class="section section--bets">
+        <!--FORMULARIO-->
+        <div class="bet-form">
+          <h4 class="bet-form__title">Adicionar Aposta</h4>
+          <form id="bet-form" class="bet-form__form">
+            <input type="date" class="bet-form__input" id="date" required />
+            <input
+              type="number"
+              class="bet-form__input"
+              placeholder="Valor apostado"
+              step="any"
+              id="bet-value"
+              required
+            />
+            <input
+              type="number"
+              class="bet-form__input"
+              placeholder="Retorno"
+              step="any"
+              id="odd"
+              required
+            />
+            <input type="submit" class="bet-form__button" value="Salvar" />
+            <input
+              type="reset"
+              class="bet-form__button bet-form__button--reset"
+              value="Limpar"
+            />
+          </form>
+        </div>
+
+        <!--LISTA-->
+        <div class="bet-list">
+          <div class="bet-list__header">
+            <h4 class="bet-list__title">Histórico</h4>
+            <button id="limpa" class="bet-list__clear-button">
+              Limpar dados
+            </button>
+          </div>
+          <ul id="bet-list" class="bet-list__items"></ul>
+        </div>
+
+        <!--ESTATISTICAS-->
+        <div class="statistics">
+          <h4 class="statistics__title">Estatísticas</h4>
+          <div class="statistics__items">
+            <p class="statistics__item">
+              Assertividade:
+              <span id="assertividade" class="statistics__value">0.00</span>%
+            </p>
+            <p class="statistics__item">
+              Total de apostas:
+              <span id="total-apostas" class="statistics__value">0</span>
+            </p>
+
+            <p class="statistics__item">
+              Greens: <span id="total-green" class="statistics__value">0</span>
+            </p>
+            <p class="statistics__item">
+              Reds: <span id="total-red" class="statistics__value">0</span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="/js/functions.js"></script>
+    <script src="/js/themeChanger.js"></script>
+  </body>
+</html>

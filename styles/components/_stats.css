@@ -1,0 +1,64 @@
+.statistics {
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: 0 0 8px 0 rgba(197, 198, 197, 0.54),
+    0 6px 20px 0 rgba(106, 106, 106, 0.19);
+  width: fit-content;
+  height: fit-content;
+  background-color: var(--card-bg-color);
+  border-radius: 8px;
+  padding: 10px;
+  min-height: 258px;
+  max-height: 258px;
+  gap: 20px;
+  min-width: 200px;
+}
+
+.statistics__item {
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  text-align: left;
+
+  background-color: var(--white);
+ 
+}
+
+.statistics__items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.statistics__items p, span{
+ padding-top: 5px;
+  padding-left: 5px;
+}
+
+/* Responsividado */
+@media (max-width: 768px) {
+  .statistics {
+    width: 100%; 
+    min-height: auto; 
+    max-height: none; 
+    padding: 5px; 
+    gap: 10px; 
+  }
+
+  .statistics__item {
+    height: auto; 
+    padding: 5px; 
+  }
+
+  .statistics__items {
+    gap: 0.3rem; 
+  }
+
+  .statistics__items p,
+  span {
+    padding-top: 3px; 
+    padding-left: 3px;
+  }
+}

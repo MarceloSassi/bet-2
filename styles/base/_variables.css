@@ -1,0 +1,27 @@
+:root {
+    /* Light Theme Variables */
+    --color-primary: #6abf53;
+    --color-secondary: #1aad57;
+    --background-color: #e8e8e8;
+    --text-color: #3e3e3e;
+    --border-color: #dddddd;
+    --button-hover: #256713;
+    --input-border-color: #cccccc;
+    --card-bg-color: #eee;
+    --white: #ffffff;
+    --toggleBg: #056a0a;
+  }
+  
+  [data-theme="dark"] {
+    /* Dark Theme Variables */
+    --color-primary: #10bb30;
+    --color-secondary: #94ee94;
+    --background-color: #2e2e2e;
+    --text-color: #ecf0f1;
+    --border-color: #6b6b6b;
+    --button-hover: #8e44ad;
+    --input-border-color: #3a3a3a;
+    --card-bg-color: #444444;
+    --white: #909090;
+    --toggleBg: #69d16e;
+  }
